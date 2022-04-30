@@ -34,6 +34,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import org.lwjgl.glfw.GLFW;
 
+import java.awt.*;
 import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.List;
@@ -44,7 +45,7 @@ import java.util.stream.Collectors;
 /**
  * Central access point for AltoClef
  */
-public class AltoClef implements ModInitializer {
+public class AltoClef extends Component implements ModInitializer {
 
     // Static access to altoclef
     private static final Queue<Consumer<AltoClef>> _postInitQueue = new ArrayDeque<>();
